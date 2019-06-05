@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 @Entity(tableName = "manager")
-data class Manager(@PrimaryKey @ColumnInfo(name = "id")val id:String,
+data class Manager(@PrimaryKey @ColumnInfo(name = "id")val id:Int,
                    @ColumnInfo(name = "name")val name:String,
                    @ColumnInfo(name = "user_name")val userName:String,
-                   @ColumnInfo(name  = "password")val password:String) :Serializable
+                   @ColumnInfo(name  = "password")val password:String)
